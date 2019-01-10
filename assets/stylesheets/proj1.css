@@ -1,0 +1,76 @@
+ul {
+    list-style-type: none; /*remove list styling*/
+    margin: 0; /*remove default list margin and padding*/
+    padding: 0;
+}
+li { /*li by default is block element*/
+    display: inline;
+}
+a { /*apply to all a elements (as long as not overridden by more specific styling*/
+    padding-top: 5px;
+    text-decoration: none; /*remove link underlining*/
+    color: #000; /*change font color*/
+    opacity: 0.75; /*change font opacity*/
+}
+a#About { /*style each a element using its ID*/
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+a#Store {
+    float: left;
+}
+a#Gmail {
+    float: right;
+    padding-right: 10px;
+}
+a#Images {
+    float: right;
+    padding-right: 10px;
+}
+section {
+    padding-top: 195px;
+}
+img {
+    width: 270px; /*resize image, auto makes sure it retains its proportions*/
+    height: auto;
+    display: block; /*imgs are inline (flow with surrounding text), change to block to center*/
+    top: 500px;
+    margin: 0px auto; /*this will center the image*/
+}
+input#search {
+    display: block;
+    margin: 0px auto; /*center search box, since display set to block*/
+    margin-top: 30px;
+    font-size: 100%;
+    padding: 12px; /*padding for text*/
+    width: 460px; /*make bar wider*/
+    border: none;
+    border-radius: 2px; /*creates rounded edges*/
+    box-shadow: 1px 1px 1px 1px lightgrey; /*create a shadow around bar*/
+    background-image: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png); /*insert mic image into bar*/
+    background-repeat: no-repeat;
+    background-size: 24px; /*resize mic image*/
+    background-position: 98% 50%; /*reposition  mic image--top left is 0% 0%*/
+}
+input#search:focus, input#search:hover { /*use pseudoclasses to change focus (click on) and hover behavior*/
+    outline: none;
+    box-shadow: 2px 2px 2px 1px lightgrey; /*this just makes the shadow bigger*/
+}
+#buttons { /*form is wrapped in div (which is block display by default), this allows us to center the form*/
+    text-align: center; /*this centers the form within the div*/
+    vertical-align: middle; /*vertically align the form*/
+    padding-top: 30px;
+}
+input#googlebutton, input#luckybutton {
+    display: inline; /*make sure buttons line up in a row*/
+    padding: 12px;
+    border: none;
+    background-color: #f2f2f2;
+    outline: none;
+    font-weight: bold;
+    color: #757575; /*change button font color*/
+}
+a, input {
+    font-family: Arial, Helvetica, sans-serif; /*change font for all these elements*/
+}
